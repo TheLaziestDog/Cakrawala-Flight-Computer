@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #1e1f21;
+    color: #fffcf2;
+}
+
+/* Containers */
+.horiz-scene-container {
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    border: 2px solid #E8AA42;
+}
+
+.topdown-scene-container {
+    width: 30%;
+    height: 400px;
+    display: inline-block;
+    border: 2px solid #E8AA42;
+}
+
+.yaw-visual-container {
+    width: 24%;
+    height: 400px;
+    display: inline-block;
+    border: 2px solid #E8AA42;
+}
+
+.telemetry-table-container {
+    border: 2px solid #E8AA42;
+    height: 400px;  /* Adjust this value to match other graphs */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  /* Hide any overflow */
+}
+
+.speed-container {
+    width: 100%;
+    height: 90%;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:  94%;  /* This will be flexible */
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 1);
+    border: 2px solid #E8AA42;
+}
+
+.control-button {
+    width: 200px;
+    height: 50px;  /* Adjust this value to change button height */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #E8AA42;
+    color: #1e1f21;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.control-button:hover {
+    background-color: #f0b860;
+}
+
+/* Phase Indicator */
+.phase-indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 94%;  /* This will be flexible */
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 1);
+    border: 2px solid #E8AA42;
+    margin-top: 20px;
+}
+
+.phase-container {
+    text-align: center;
+    margin: 5px;
+}
+
+.phase-circle {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #E8AA42;
+    background-color: #1e1f21;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.phase-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.phase-label {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Formatting */
+.graph-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.top-row-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.middle-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quarter-width {
+    width: 24%;
+    margin-bottom: 10px;
+}
+
+.gauge-wrapper {
+    width: 22.8%;  /* Adjust as needed */
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #E8AA42;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 1);
+}
+
+/* Misc */
+.graph-title {
+    font-family: 'Open Sans';
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 1);
+    text-align: center;
+}
