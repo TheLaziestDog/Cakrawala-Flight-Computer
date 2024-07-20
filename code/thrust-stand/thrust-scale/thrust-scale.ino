@@ -45,8 +45,5 @@ void loop() {
     currentTime = millis() - startTime;
     Serial.print(reading); Serial.print(",");
     Serial.println(currentTime);
-  } /*else if (scaleOn == false) {
-    Serial.print(0); Serial.print(",");
-    Serial.println(0);
-  }*/
+  }
 }
