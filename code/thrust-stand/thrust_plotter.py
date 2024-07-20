@@ -12,7 +12,7 @@ class ThrustStandApp(QMainWindow):
         self.setGeometry(100, 100, 800, 600)
 
         # Serial connection setup
-        self.ser = serial.Serial('/dev/tty.usbserial-0001', 115200, timeout=1)
+        self.ser = serial.Serial('/dev/tty.yourserial', 115200, timeout=1)
 
         # Data storage
         self.times = []
